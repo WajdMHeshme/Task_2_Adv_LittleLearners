@@ -1,0 +1,106 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.card {
+    background: #fff;
+    width: 88.9%;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 4px 4px 0px 1px #1E1E1E;
+    border: 2px solid var(--border-color);
+    height: 462px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.testimonial-text {
+    line-height: 1.5;
+    color: #333333;
+    width: 76%;
+    margin: auto;
+}
+
+.btnsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .arrowBtn {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    background: #fff;
+    border: 2px solid var(--border-color);
+    font-size: 24px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+span.star {
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.arrowbtns {
+    width: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media screen and (max-width:1919px) {
+    .testimonial-text {
+        font-size: 16px !important
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .slide {
+        padding: 8px;
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media screen and (max-width:645px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}

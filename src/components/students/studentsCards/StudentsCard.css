@@ -1,0 +1,119 @@
+section {
+    .studentCard {
+        width: 31.2249%;
+        text-align: center;
+        border: 2px solid var(--border-color);
+        border-radius: 12px;
+        padding: 50px;
+        margin-bottom: 50px;
+        background-color: #ffffff;
+        box-shadow: 6px 6px 0px 2px #1E1E1E;
+
+        .imageContainer {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 50px;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .imageContainer::before {
+            content: '';
+            position: absolute;
+            width: 125px;
+            height: 384px;
+            background-color: var(--active-color);
+            z-index: -1;
+            top: -51px;
+            left: 50%;
+            border: 2px solid var(--border-color);
+            border-bottom-right-radius: 12px;
+            border-bottom-left-radius: 12px;
+            transform: translateX(-50%);
+}
+
+        .text {
+
+            h2 {
+
+                font-size: 28px;
+                line-height: 1.3;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.5;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:1919px) {
+    section {
+        .studentCard {
+            padding: 40px;
+            .imageContainer::before {
+                width: 103px;
+                height: 318px;
+                top: -41px;
+            }
+            .text {
+                h2 {
+                    font-size: 24px !important;
+                }
+
+                p {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:1440px) {
+    .studentCard {
+        height: 480px;
+
+        .imageContainer {
+            margin-bottom: 75px !important;
+        }
+
+    .imageContainer::before {
+        height: 240px;
+        top: -41px;
+    }
+}
+}
+
+@media screen and (max-width: 1180px) {
+    .studentCard {
+        width: 46% !important;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .studentCard {
+        width: 100% !important;
+        padding: 30px !important;
+        height: auto;
+        .imageContainer::before {
+            height: 270px !important;
+            top: -31px !important;
+        }
+        .text {
+            h2 {
+                font-size: 22px !important;
+            }
+            p {
+                font-size: 16px !important;
+            }
+        }
+    }
+}

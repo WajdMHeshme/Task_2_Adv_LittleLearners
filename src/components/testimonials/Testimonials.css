@@ -1,0 +1,12 @@
+section .myContainer {
+    overflow: hidden !important;
+    width: 82%;
+    margin: auto;
+}
+
+@media screen and (max-width : 425px) {
+    section .myContainer {
+        width: 91.794%;
+    }
+    
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: "Outfit",sans-serif;
+  font-weight: 500;
+}
+
+:root {
+  --main-color: #FFF5F0;
+  --active-color: #FFEFE5;
+  --top-nav-color: #FFDECC;
+  --white-color: #FFFFFF;
+  --weak-orange:#FFAE80;
+  --orange: #FF8D4D;
+  --border-color: #262626;
+  --transition: all 0.3s ease;
+}
+
+.container {
+  /* width: ٨٢.٨١٢٥ */
+  width: 82.8125%;
+  margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+@media screen and (max-width:1919px) {
+  .container {
+    width: 88.888%;
+  }
+}
+
+
+@media screen and (max-width:426px) {
+  .container {
+    width: 91.794%;
+  }
+  
+}
