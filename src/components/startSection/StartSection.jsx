@@ -1,5 +1,5 @@
 import "./StartSection.css";
-import CornerImg from "/assets/Abstract Design (5).png";
+import CornerImg from "/assets/AbstractDesign5.png";
 const StartSection = ({ title, mainTitle, paragraph }) => {
   return (
     <div data-aos="zoom-in" className="start">
